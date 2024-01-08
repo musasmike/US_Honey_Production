@@ -1,4 +1,5 @@
 # Import essential Python packages
+import pathlib
 import pandas as pd
 import numpy as np
 import dash
@@ -10,7 +11,9 @@ import plotly.graph_objects as go
 
 # import plotly.express as px
 
+
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
+server = app.server
 
 # Read the data
 
